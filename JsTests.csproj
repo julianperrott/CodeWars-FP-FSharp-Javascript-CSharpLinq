@@ -109,6 +109,7 @@
     <Content Include="Snail\snail.js" />
     <Content Include="Snail\snailTests.js" />
     <Content Include="specrunner.html" />
+    <Content Include="Various\MoleculeToAtoms.js" />
     <Content Include="Various\squareDigits.js" />
     <Content Include="Web.config" />
   </ItemGroup>

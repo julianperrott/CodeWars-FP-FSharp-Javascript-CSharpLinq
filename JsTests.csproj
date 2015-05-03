@@ -65,7 +65,7 @@
     <Content Include="HaskellListDotNotation\HaskellListDotNotationTests.js" />
     <Content Include="Ipv4ToInt32\Ipv4ToInt32Tests.js" />
     <Content Include="Ipv4ToInt32\Ipv4ToInt32.js" />
-    <Content Include="Justify.js" />
+    <Content Include="Various\Justify.js" />
     <Content Include="LastCake\LastCake.js" />
     <Content Include="lib\jasmine-core.rb" />
     <Content Include="lib\jasmine-core\core.py" />
@@ -110,6 +110,7 @@
     <Content Include="Snail\snailTests.js" />
     <Content Include="specrunner.html" />
     <Content Include="Various\MoleculeToAtoms.js" />
+    <Content Include="Various\multiplyBy.js" />
     <Content Include="Various\squareDigits.js" />
     <Content Include="Web.config" />
   </ItemGroup>

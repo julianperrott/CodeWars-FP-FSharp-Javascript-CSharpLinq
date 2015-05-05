@@ -1,6 +1,0 @@
-C:\Projects\CodeWars-Javascript\bin\WebApplication1.dll.config
-C:\Projects\CodeWars-Javascript\bin\WebApplication1.dll
-C:\Projects\CodeWars-Javascript\bin\WebApplication1.pdb
-C:\Projects\CodeWars-Javascript\obj\Debug\JsTests.csprojResolveAssemblyReference.cache
-C:\Projects\CodeWars-Javascript\obj\Debug\WebApplication1.dll
-C:\Projects\CodeWars-Javascript\obj\Debug\WebApplication1.pdb

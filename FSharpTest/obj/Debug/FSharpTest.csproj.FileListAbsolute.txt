@@ -1,9 +1,0 @@
-C:\Projects\CodeWars-Javascript\FSharpTest\bin\Debug\FSharpTest.dll
-C:\Projects\CodeWars-Javascript\FSharpTest\bin\Debug\FSharpTest.pdb
-C:\Projects\CodeWars-Javascript\FSharpTest\obj\Debug\FSharpTest.csprojResolveAssemblyReference.cache
-C:\Projects\CodeWars-Javascript\FSharpTest\obj\Debug\FSharpTest.dll
-C:\Projects\CodeWars-Javascript\FSharpTest\obj\Debug\FSharpTest.pdb
-C:\Projects\CodeWars-Javascript\FSharpTest\bin\Debug\CodeWars.Fsharp.dll
-C:\Projects\CodeWars-Javascript\FSharpTest\bin\Debug\CodeWars.Fsharp.pdb
-C:\Projects\CodeWars-Javascript\FSharpTest\bin\Debug\FSharp.Core.dll
-C:\Projects\CodeWars-Javascript\FSharpTest\bin\Debug\FSharp.Core.xml

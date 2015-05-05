@@ -1,0 +1,177 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{43EFFB54-C979-4168-A1C7-7DBDA0E5B47E}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Tests</RootNamespace>
+    <AssemblyName>Tests</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FSharp.Core, Version=4.3.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>packages\FSharp.Core.3.1.2.1\lib\net40\FSharp.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\PublicAssemblies\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Javascript\Counting Change Combinations\CountingChangeCombinations.js" />
+    <Content Include="Javascript\Counting Change Combinations\CountingChangeCombinationsTests.js" />
+    <Content Include="Javascript\DefaultArgs\defaultArgsTest.js" />
+    <Content Include="Javascript\DefaultArgs\defaultArgs.js" />
+    <Content Include="Javascript\HaskellListDotNotation\HaskellListDotNotation.js" />
+    <Content Include="Javascript\HaskellListDotNotation\HaskellListDotNotationTests.js" />
+    <Content Include="Javascript\Ipv4ToInt32\Ipv4ToInt32Tests.js" />
+    <Content Include="Javascript\Ipv4ToInt32\Ipv4ToInt32.js" />
+    <Content Include="Javascript\Various\Justify.js" />
+    <Content Include="Javascript\LastCake\LastCake.js" />
+    <Content Include="Javascript\lib\jasmine-core.rb" />
+    <Content Include="Javascript\lib\jasmine-core\core.py" />
+    <Content Include="Javascript\lib\jasmine-core\spec" />
+    <Content Include="Javascript\lib\jasmine-core\version.rb" />
+    <Content Include="Javascript\lib\jasmine-core\__init__.py" />
+    <Content Include="LetterChange\letterChange.js" />
+    <Content Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Javascript\lib\console\console.js" />
+    <Content Include="Javascript\lib\jasmine-core.js" />
+    <Content Include="Javascript\lib\jasmine-core\boot.js" />
+    <Content Include="Javascript\lib\jasmine-core\boot\boot.js" />
+    <Content Include="Javascript\lib\jasmine-core\boot\node_boot.js" />
+    <Content Include="Javascript\lib\jasmine-core\example\node_example\lib\jasmine_examples\Player.js" />
+    <Content Include="Javascript\lib\jasmine-core\example\node_example\lib\jasmine_examples\Song.js" />
+    <Content Include="Javascript\lib\jasmine-core\example\node_example\spec\helpers\jasmine_examples\SpecHelper.js" />
+    <Content Include="Javascript\lib\jasmine-core\example\node_example\spec\jasmine_examples\PlayerSpec.js" />
+    <Content Include="Javascript\lib\jasmine-core\example\spec\PlayerSpec.js" />
+    <Content Include="Javascript\lib\jasmine-core\example\spec\SpecHelper.js" />
+    <Content Include="Javascript\lib\jasmine-core\example\src\Player.js" />
+    <Content Include="Javascript\lib\jasmine-core\example\src\Song.js" />
+    <Content Include="Javascript\lib\jasmine-core\jasmine-html.js" />
+    <Content Include="Javascript\lib\jasmine-core\jasmine.css" />
+    <Content Include="Javascript\lib\jasmine-core\jasmine.js" />
+    <Content Include="Javascript\lib\jasmine-core\json2.js" />
+    <Content Include="Javascript\lib\jasmine-core\node_boot.js" />
+    <Content Include="Javascript\LruCache\LruCache.js" />
+    <Content Include="Javascript\LruCache\LruCacheTests.js" />
+    <Content Include="Javascript\Luhn\Luhn.js" />
+    <Content Include="Javascript\Luhn\LuhnTests.js" />
+    <Content Include="Javascript\Maybe  Monad\maybe.js" />
+    <Content Include="Javascript\Maybe  Monad\maybeTest.js" />
+    <Content Include="Javascript\Recover a secret string from random triplets\triplets.js" />
+    <Content Include="Javascript\Recover a secret string from random triplets\triplets tests.js" />
+    <Content Include="Javascript\Snail\snail.js" />
+    <Content Include="Javascript\Snail\snailTests.js" />
+    <Content Include="specrunner.html" />
+    <Content Include="Javascript\Various\MoleculeToAtoms.js" />
+    <Content Include="MultiplyBy\multiplyBy.js" />
+    <Content Include="Javascript\Various\squareDigits.js" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LetterChange\LetterChange.cs" />
+    <Compile Include="MultiplyBy\MultiplyBy.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CSharp\CSharp.csproj">
+      <Project>{79bafd0f-f6e4-4d4c-8db8-c972c9e4a54e}</Project>
+      <Name>CSharp</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FSharp\FSharp.fsproj">
+      <Project>{04a99a77-536f-4d49-9cb3-9f5ee27d8725}</Project>
+      <Name>FSharp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>35028</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:35028/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

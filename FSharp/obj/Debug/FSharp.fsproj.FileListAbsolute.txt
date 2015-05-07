@@ -1,0 +1,7 @@
+C:\Projects\FSharp\bin\Debug\FSharp.XML
+C:\Projects\FSharp\bin\Debug\CodeWars.Fsharp.dll
+C:\Projects\FSharp\bin\Debug\CodeWars.Fsharp.pdb
+C:\Projects\FSharp\bin\Debug\FSharp.Core.dll
+C:\Projects\FSharp\bin\Debug\FSharp.Core.xml
+C:\Projects\FSharp\obj\Debug\CodeWars.Fsharp.dll
+C:\Projects\FSharp\obj\Debug\CodeWars.Fsharp.pdb

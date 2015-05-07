@@ -125,6 +125,7 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BaseConversion\BaseConversion.cs" />
     <Compile Include="LetterChange\LetterChange.cs" />
     <Compile Include="MultiplyBy\MultiplyBy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

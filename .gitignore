@@ -44,3 +44,4 @@ Temporary Items
 bin/WebApplication1.dll
 *.pdb
 *.dll
+*.cache

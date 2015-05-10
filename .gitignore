@@ -1,3 +1,9 @@
 *.dll
 *.pdb
-*.dll
+CSharp/bin/
+CSharp/obj/
+FSharp/bin/
+FSharp/obj/
+Tests/bin/
+Tests/obj/
+Tests/TestResults/

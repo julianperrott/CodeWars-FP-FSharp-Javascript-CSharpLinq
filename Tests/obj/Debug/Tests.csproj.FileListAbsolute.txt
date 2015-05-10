@@ -10,3 +10,15 @@ C:\Projects\CodeWars-Javascript\bin\CodeWars.Fsharp.pdb
 C:\Projects\CodeWars-Javascript\bin\FSharp.Core.xml
 C:\Projects\CodeWars-Javascript\obj\Debug\Tests.dll
 C:\Projects\CodeWars-Javascript\obj\Debug\Tests.pdb
+C:\Projects\CodeWars-Javascript\Tests\bin\Tests.dll.config
+C:\Projects\CodeWars-Javascript\Tests\bin\Tests.dll
+C:\Projects\CodeWars-Javascript\Tests\bin\Tests.pdb
+C:\Projects\CodeWars-Javascript\Tests\bin\CodeWars.Fsharp.dll
+C:\Projects\CodeWars-Javascript\Tests\bin\CSharp.dll
+C:\Projects\CodeWars-Javascript\Tests\bin\FSharp.Core.dll
+C:\Projects\CodeWars-Javascript\Tests\bin\CSharp.pdb
+C:\Projects\CodeWars-Javascript\Tests\bin\CodeWars.Fsharp.pdb
+C:\Projects\CodeWars-Javascript\Tests\bin\FSharp.Core.xml
+C:\Projects\CodeWars-Javascript\Tests\obj\Debug\Tests.csprojResolveAssemblyReference.cache
+C:\Projects\CodeWars-Javascript\Tests\obj\Debug\Tests.dll
+C:\Projects\CodeWars-Javascript\Tests\obj\Debug\Tests.pdb

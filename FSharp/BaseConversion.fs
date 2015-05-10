@@ -44,17 +44,22 @@ module BaseConversionFs =
     let (alpha:Alphabet)         = Array.append [|'a'..'z'|] [|'A'..'Z'|]
     let (alphaNumeric:Alphabet)  = Array.append [|'0'..'9'|] (Array.append [|'a'..'z'|] [|'A'..'Z'|])
 
-    let alphaMult (len:int) (i:int) (x:int) = (pown len i) * x
-    let toInt (a:Alphabet) (c:string) =  
+    let rec ToBase (len:bigint) (i:bigint) =
+        if i.IsZero then []
+        else List.append [i%len] (ToBase len ((i-(i%len)) / len ))
+
+    let convert  (a:Alphabet) (b:Alphabet) (c:string) = 
         c.ToCharArray()
         |> Array.map (fun chr -> Array.findIndex (fun elem -> chr = elem ) a)
-        |> Array.mapi (fun i x -> (pown (Array.length a) ( 1 - c.Length - i)) * x )
+        |> Array.map (fun i -> bigint(i))
+        |> Array.mapi (fun i x -> (pown (bigint(Array.length a)) ( -1 + c.Length - i )) * x )
         |> Array.sum
-
-
-    let convert  (a:Alphabet) (b:Alphabet) (c:string) = c
-
-
+        |> ToBase (bigint(b.Length))
+        |> List.map int
+        |> List.rev
+        |> List.map (Array.get b)
+        |> System.String.Concat
+        |> (fun s-> if s.Length=0 then (Array.get b 0).ToString() else s)
 
     (* 
     convert alphaLower hex "hello" `shouldBe` "320048"

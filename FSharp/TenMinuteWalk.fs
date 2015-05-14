@@ -97,5 +97,5 @@ type ``Ten Minute Walk Tests`` ()=
             |> List.map buildRandomWalk
             |> List.map (fun walk -> (walk, isValidWalk walk))
             |> List.map (fun r -> printfn "%s %b" (new string(fst r)) (snd r) |> (fun n -> snd r)  )
-            |> List.map (should be True)
+            |> List.map (should be False)
             |> ignore

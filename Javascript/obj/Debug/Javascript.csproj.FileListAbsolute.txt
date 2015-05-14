@@ -3,3 +3,9 @@ C:\Projects\CodeWars-Javascript\Tests\bin\Javascript.dll
 C:\Projects\CodeWars-Javascript\Tests\bin\Javascript.pdb
 C:\Projects\CodeWars-Javascript\Tests\obj\Debug\Javascript.dll
 C:\Projects\CodeWars-Javascript\Tests\obj\Debug\Javascript.pdb
+C:\Projects\CodeWars-FP-FSharp-Javascript-CSharpLinq\Javascript\bin\Javascript.dll.config
+C:\Projects\CodeWars-FP-FSharp-Javascript-CSharpLinq\Javascript\bin\Javascript.dll
+C:\Projects\CodeWars-FP-FSharp-Javascript-CSharpLinq\Javascript\bin\Javascript.pdb
+C:\Projects\CodeWars-FP-FSharp-Javascript-CSharpLinq\Javascript\obj\Debug\Javascript.csprojResolveAssemblyReference.cache
+C:\Projects\CodeWars-FP-FSharp-Javascript-CSharpLinq\Javascript\obj\Debug\Javascript.dll
+C:\Projects\CodeWars-FP-FSharp-Javascript-CSharpLinq\Javascript\obj\Debug\Javascript.pdb

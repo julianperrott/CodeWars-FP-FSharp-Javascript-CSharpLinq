@@ -24,3 +24,24 @@ module LetterChangeFs =
         | a -> char ((int c) + 1)
 
     let letterChange (str:string) = new String(str.ToCharArray() |> Array.map nextChar);
+
+open Microsoft.VisualStudio.TestTools.UnitTesting
+open FsUnit.MsTest
+open NHamcrest.Core
+open LetterChangeFs
+open System
+
+[<TestClass>] 
+type ``letterChange Tests`` ()=
+
+    [<TestMethod>] member test. ``letterChange JavaScript``
+        ()= letterChange "JavaScript" |>  should equal "KbwbTdsjqu"
+
+    [<TestMethod>] member test. ``letterChange Lorem Ipsum``
+        ()= letterChange "Lorem Ipsum" |>  should equal "Mpsfn Jqtvn"
+
+    [<TestMethod>] member test. ``letterChange Z``
+        ()= letterChange "Z" |>  should equal "A"
+
+    [<TestMethod>] member test. ``letterChange z``
+        ()= letterChange "z" |>  should equal "a"

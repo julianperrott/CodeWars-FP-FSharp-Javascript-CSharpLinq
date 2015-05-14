@@ -1,0 +1,5 @@
+C:\Projects\CodeWars-Javascript\Tests\bin\Javascript.dll.config
+C:\Projects\CodeWars-Javascript\Tests\bin\Javascript.dll
+C:\Projects\CodeWars-Javascript\Tests\bin\Javascript.pdb
+C:\Projects\CodeWars-Javascript\Tests\obj\Debug\Javascript.dll
+C:\Projects\CodeWars-Javascript\Tests\obj\Debug\Javascript.pdb

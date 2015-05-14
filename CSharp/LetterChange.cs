@@ -17,6 +17,7 @@ namespace CSharp.Codewars
     using System;
     using System.Collections;
     using System.Collections.Generic;
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
 
     public partial class LetterChangeCs
     {
@@ -36,6 +37,35 @@ namespace CSharp.Codewars
                 case ' ': return ' ';
                 default: return (char)((int)c + 1);
             }
+        }
+    }
+
+
+    [TestClass]
+    public class LetterChangeCsTests
+    {
+        [TestMethod]
+        public void LetterChangeCs_JavaScript()
+        {
+            Assert.AreEqual("KbwbTdsjqu", LetterChangeCs.LetterChange("JavaScript"));
+        }
+
+        [TestMethod]
+        public void LetterChangeCs_LoremIpsum()
+        {
+            Assert.AreEqual("Mpsfn Jqtvn", LetterChangeCs.LetterChange("Lorem Ipsum"));
+        }
+
+        [TestMethod]
+        public void LetterChangeCs_CornerZ_A()
+        {
+            Assert.AreEqual("A", LetterChangeCs.LetterChange("Z"));
+        }
+
+        [TestMethod]
+        public void LetterChangeCs_Cornerz_a()
+        {
+            Assert.AreEqual("A", LetterChangeCs.LetterChange("Z"));
         }
     }
 }

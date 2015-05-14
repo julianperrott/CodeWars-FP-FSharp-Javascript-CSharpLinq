@@ -13,6 +13,7 @@ namespace CSharp.Codewars
     using System;
     using System.Collections;
     using System.Collections.Generic;
+    using Microsoft.VisualStudio.TestTools.UnitTesting;
 
     public partial class MultiplyByCs
     {
@@ -23,6 +24,26 @@ namespace CSharp.Codewars
                 {
                     return acc.Concat(new List<int> { acc.Last() * mult }).ToList(); 
                 });
+        }
+    }
+
+    [TestClass]
+    public class MultiplyByCsTests
+    {
+        [TestMethod]
+        public void MultiplyByCs_4Items()
+        {
+            var expected = new List<int> { 6, 18, 54, 162 };
+            var actual = MultiplyByCs.MultiplyBy(2, 3, 4).ToList();
+            CollectionAssert.AreEqual(expected, actual);
+        }
+
+        [TestMethod]
+        public void MultiplyByCs_6Items()
+        {
+            var expected = new List<int> { 8, 32, 128, 512, 2048, 8192 };
+            var actual = MultiplyByCs.MultiplyBy(2, 4, 6).ToList();
+            CollectionAssert.AreEqual(expected, actual);
         }
     }
 }

@@ -48,7 +48,7 @@ module BaseConversionFs =
         if i.IsZero then []
         else List.append [i%len] (ToBase len ((i-(i%len)) / len ))
 
-    let convert  (a:Alphabet) (b:Alphabet) (c:string) = 
+    let convert  (a:Alphabet) (b:Alphabet) (c:string) =
         c.ToCharArray()
         |> Array.map (fun chr -> Array.findIndex (fun elem -> chr = elem ) a)
         |> Array.map (fun i -> bigint(i))
@@ -61,7 +61,46 @@ module BaseConversionFs =
         |> System.String.Concat
         |> (fun s-> if s.Length=0 then (Array.get b 0).ToString() else s)
 
-    (* 
+open Microsoft.VisualStudio.TestTools.UnitTesting
+open FsUnit.MsTest
+open NHamcrest.Core
+open BaseConversionFs
+open System
+
+[<TestClass>]
+type ``BaseConversionFs Tests`` ()=
+
+    [<TestMethod>] member test. ``BaseConversionFs_alphaLowerToHex``
+        ()= convert alphaLower hex "hello" |> should equal "320048"
+
+    [<TestMethod>] member test. ``BaseConversionFs_DecToBin``
+        ()= convert dec bin "15" |> should equal "1111"
+
+    [<TestMethod>] member test. ``BaseConversionFs_DecToOct``
+        ()= convert dec oct "15" |> should equal "17"
+
+    [<TestMethod>] member test. ``BaseConversionFs_BinToDec``
+        ()= convert bin dec "1010" |> should equal  "10"
+
+    [<TestMethod>] member test. ``BaseConversionFs_BinToHex``
+        ()= convert bin hex "1010" |> should equal "a"
+
+    [<TestMethod>] member test. ``BaseConversionFs_DecToAlpha``
+        ()= convert dec alpha "0" |> should equal "a"
+
+    [<TestMethod>] member test. ``BaseConversionFs_DecToAlphaLower``
+        ()= convert dec alphaLower "27" |> should equal "bb"
+
+    [<TestMethod>] member test. ``BaseConversionFs Revert Alpha to Alpha Numeric``
+        ()= convert alpha alphaNumeric "EaCfEvxNcbScvR" 
+            |> convert alphaNumeric alpha  
+            |> should equal "EaCfEvxNcbScvR"
+
+    [<TestMethod>] member test. ``BaseConversionFs starts with zero``
+        ()= convert dec dec "067452446421742473557475641125703753" |> should equal "67452446421742473557475641125703753"     
+            
+            
+(*
     convert alphaLower hex "hello" `shouldBe` "320048"
 
     abcdefghijklmnopqrstuvwxyz
@@ -72,9 +111,8 @@ module BaseConversionFs =
     convert to array of ints
     multiply the ints based upon their alphabet length ^ index
     sum the values
-    
-    convert the decimal into the new base. 
-    
+
+    convert the decimal into the new base.
 
     7  * 26 * 26 * 26 * 26 = 3198832
     4  * 26 * 26 * 26 = 70304

@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{43EFFB54-C979-4168-A1C7-7DBDA0E5B47E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Javascript", "Javascript\Javascript.csproj", "{43EFFB54-C979-4168-A1C7-7DBDA0E5B47E}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", "Tests\.nuget", "{03487204-1490-4588-A3EB-5EBB10576EC3}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{03487204-1490-4588-A3EB-5EBB10576EC3}"
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharp", "FSharp\FSharp.fsproj", "{04A99A77-536F-4D49-9CB3-9F5EE27D8725}"
 EndProject

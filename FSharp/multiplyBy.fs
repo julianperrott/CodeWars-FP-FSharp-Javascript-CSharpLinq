@@ -13,7 +13,7 @@ NB: all arguments (x,y and n) will always be integers. Times (n) will always be 
 module MultiplyByFs =
     let multiplyHeadAndAppend xs x = List.append [List.head xs * x] xs // xs:int list -> x:int -> int list
     let multiplyBy x y n = // x:int -> y:int -> n:int -> int list
-        List.fold multiplyHeadAndAppend [x*y] [ for i in 2..n -> y ] 
+        List.fold multiplyHeadAndAppend [x*y] [ for i in 2..n -> y ]
         |> List.rev;
 
     let rec multiplyByV2 x y n = // x:int -> y:int -> n:int -> int list
@@ -23,5 +23,18 @@ module MultiplyByFs =
         | _ -> List.append [x * y] (multiplyByV2 (x*y) y (n-1))
 
 
+open Microsoft.VisualStudio.TestTools.UnitTesting
+open FsUnit.MsTest
+open MultiplyByFs
 
-//#load "C:\Projects\FSharp\Library1.fs";;
+[<TestClass>]
+type ``MultiplyByFs_Tests`` ()=
+
+    [<TestMethod>] member test. ``MultiplyByFs 2 3 4``
+        ()= multiplyBy 2 3 4 |>  should equal [ 6; 18; 54; 162 ]
+
+    [<TestMethod>] member test. ``MultiplyByFs 2 4 6``
+        ()= multiplyBy 2 4 6 |>  should equal [ 8; 32; 128; 512; 2048; 8192  ]
+
+    [<TestMethod>] member test. ``MultiplyByFs V2 2 4 6``
+        ()= multiplyByV2 2 4 6 |>  should equal [ 8; 32; 128; 512; 2048; 8192  ]

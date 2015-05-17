@@ -1,4 +1,6 @@
-﻿function ipToInt32(ip) {
+﻿//"6 kyu","IPv4 to int32","52ea928a1ef5cfec800003ee"
+
+function ipToInt32(ip) {
     return ip.split(".").reduce(function (p, c, i) { return p + (c << ((3 - i) * 8)); }, 0) >>> 0;
 }
 

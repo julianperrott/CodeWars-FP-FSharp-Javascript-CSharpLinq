@@ -1,4 +1,6 @@
-﻿var justify = function (str, len) {
+﻿// "4 kyu","Text align justify","537e18b6147aa838f600001b"
+
+var justify = function (str, len) {
     var result = '';
     var lastLine = str.trim()
         .split(' ')

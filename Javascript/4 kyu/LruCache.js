@@ -1,4 +1,6 @@
-﻿function LRUCache(capacity, init) {
+﻿// "4 kyu","LRU Cache","53b406e67040e51e17000c0a"
+
+function LRUCache(capacity, init) {
     var self = this;
     var queue = [];
 

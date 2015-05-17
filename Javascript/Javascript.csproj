@@ -38,14 +38,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Content Include="baseConversion.js" />
-    <Content Include="CountingChangeCombinations.js" />
-    <Content Include="defaultArgs.js" />
-    <Content Include="HaskellListDotNotation.js" />
-    <Content Include="Ipv4ToInt32.js" />
-    <Content Include="Justify.js" />
-    <Content Include="LastCake.js" />
-    <Content Include="letterChange.js" />
+    <Content Include="4 kyu\baseConversion.js" />
+    <Content Include="4 kyu\CountingChangeCombinations.js" />
+    <Content Include="4 kyu\defaultArgs.js" />
+    <Content Include="5 kyu\HaskellListDotNotation.js" />
+    <Content Include="6 kyu\Ipv4ToInt32.js" />
+    <Content Include="4 kyu\Justify.js" />
+    <Content Include="5 kyu\LastCake.js" />
+    <Content Include="beta\letterChange.js" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="lib\console\console.js" />
@@ -66,17 +66,17 @@
     <Content Include="lib\jasmine-core\jasmine.js" />
     <Content Include="lib\jasmine-core\json2.js" />
     <Content Include="lib\jasmine-core\node_boot.js" />
-    <Content Include="LruCache.js" />
-    <Content Include="Luhn.js" />
-    <Content Include="maybe.js" />
-    <Content Include="triplets.js" />
-    <Content Include="snail.js" />
+    <Content Include="4 kyu\LruCache.js" />
+    <Content Include="6 kyu\Validate Credit Card Number Luhn.js" />
+    <Content Include="3 kyu\maybe monad.js" />
+    <Content Include="4 kyu\triplets.js" />
+    <Content Include="4 kyu\snail.js" />
     <Content Include="specrunner.html" />
-    <Content Include="MoleculeToAtoms.js" />
-    <Content Include="multiplyBy.js" />
-    <Content Include="squareDigits.js" />
-    <Content Include="reverseWords.js" />
-    <Content Include="tenMinuteWalk.js" />
+    <Content Include="3 kyu\MoleculeToAtoms.js" />
+    <Content Include="beta\multiplyBy.js" />
+    <Content Include="7 kyu\squareDigits.js" />
+    <Content Include="6 kyu\reverseWords.js" />
+    <Content Include="6 kyu\tenMinuteWalk.js" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -98,6 +98,7 @@
       <DependentUpon>web.config</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

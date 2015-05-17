@@ -1,4 +1,34 @@
-﻿
+﻿/*
+    In this kata you have to implement a base converter, which converts between arbitrary bases / alphabets. Here are some pre-defined alphabets:
+
+    newtype Alphabet = Alphabet { getDigits :: [Char] } deriving (Show)
+bin, oct, dec, hex, alphaLower, alphaUpper, alpha, alphaNumeric :: Alphabet
+bin = "01"
+oct = ['0'..'7']
+    dec = ['0'..'9']
+    hex = ['0'..'9'] ++ ['a'..'f']
+    alphaLower    = ['a'..'z']
+    alphaUpper    = ['A'..'Z']
+    alpha         = ['a'..'z'] ++ ['A'..'Z']
+    alphaNumeric  = ['0'..'9'] ++ ['a'..'z'] ++ ['A'..'Z']
+    The function convert() should take an input (string), the source alphabet (string) and the target alphabet (string). You can assume that the input value always consists of characters from the source alphabet. You don't need to validate it.
+
+    Examples:
+
+            convert dec bin "15"   `shouldBe` "1111"
+        convert dec oct "15"   `shouldBe` "17"
+        convert bin dec "1010" `shouldBe` "10"
+        convert bin hex "1010" `shouldBe` "a"
+
+        convert dec alpha      "0"     `shouldBe` "a"
+        convert dec alphaLower "27"    `shouldBe` "bb"
+        convert alphaLower hex "hello" `shouldBe` "320048"
+        Additional Notes:
+
+            The maximum input value can always be encoded in a number without loss of precision in JavaScript. In Haskell, intermediate results will probably be to large for Int.
+            The function must work for any arbitrary alphabets, not only the pre-defined ones
+            You don't have to consider negative numbers
+*/
 
 function convert(from, to, str) {
     var toArray=to.split("");

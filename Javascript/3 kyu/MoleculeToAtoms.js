@@ -1,4 +1,6 @@
-﻿function parseMolecule(formula) {
+﻿// "3 kyu","Molecule to atoms","52f831fa9d332c6591000511"
+
+function parseMolecule(formula) {
 
     var modulecule = {};
 

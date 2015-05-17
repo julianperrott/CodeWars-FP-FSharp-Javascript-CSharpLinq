@@ -44,14 +44,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BaseConversion.cs" />
-    <Compile Include="LetterChange.cs" />
-    <Compile Include="MultiplyBy.cs" />
+    <Compile Include="4 kyu\BaseConversion.cs" />
+    <Compile Include="beta\LetterChange.cs" />
+    <Compile Include="beta\MultiplyBy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TenMinuteWalk.cs" />
+    <Compile Include="6 kyu\TenMinuteWalk.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ReverseWords.cs" />
+    <Compile Include="6 kyu\ReverseWords.cs" />
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />

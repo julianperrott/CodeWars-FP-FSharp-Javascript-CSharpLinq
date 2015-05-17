@@ -1,4 +1,6 @@
-﻿function validate(n) {
+﻿// "6 kyu","Validate Credit Card Number","5418a1dd6d8216e18a0012b2"
+
+function validate(n) {
     return n.toString().split('')
         .map(doubleDigit)
         .map(singleDigit)

@@ -1,4 +1,5 @@
-﻿function defaultArguments(func, params) {
+﻿// "4 kyu","Default Arguments","52605419be184942d400003d"
+function defaultArguments(func, params) {
 
     var args = func.toString()
         .split("(")[1]

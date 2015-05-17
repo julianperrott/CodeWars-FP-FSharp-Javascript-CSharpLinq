@@ -1,4 +1,6 @@
-﻿snail = function (array) {
+﻿// "4 kyu","Snail","521c2db8ddc89b9b7a0000c1"
+
+snail = function (array) {
     var arrayIndex = 0;
     var index = 0;
     var direction = 0;

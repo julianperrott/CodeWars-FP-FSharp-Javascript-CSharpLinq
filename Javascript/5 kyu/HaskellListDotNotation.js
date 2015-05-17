@@ -1,4 +1,6 @@
-﻿function ArrayComprehension(options) {
+﻿// "5 kyu","Haskell List  Dot Notation","53c8b29750fe70e4a2000610"
+
+function ArrayComprehension(options) {
 
     var generator = options.generator;
     if (!generator || generator.trim().length == 0) { return []; }

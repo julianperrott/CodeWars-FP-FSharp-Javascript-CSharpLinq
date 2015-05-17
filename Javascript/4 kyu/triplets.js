@@ -1,4 +1,6 @@
-﻿var recoverSecret = function (triplets) {
+﻿// "4 kyu","Recover a secret string from random triplets","53f40dff5f9d31b813000774"
+
+var recoverSecret = function (triplets) {
 
     var isOnlyFirst = function (letter) {
         var indexes = triplets.map(function (ar) { return ar.indexOf(letter); });

@@ -1,4 +1,5 @@
-﻿// Constructor (your Captain Obivious)
+﻿// "5 kyu","Don't Eat the Last Cake!","5384df88aa6fc164bb000e7d"
+
 function Player() { }
 
 // Decide who move first - player or opponent (true if player)

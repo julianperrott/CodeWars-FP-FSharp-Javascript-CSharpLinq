@@ -1,4 +1,6 @@
-﻿var countChange = function (money, coins) {
+﻿// "4 kyu","Counting Change Combinations","541af676b589989aed0009e7"
+
+var countChange = function (money, coins) {
     if (coins.length == 0) { return 0; }
     var newcoins = coins.slice(0);
     var coin = newcoins.shift();

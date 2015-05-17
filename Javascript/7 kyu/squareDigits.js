@@ -1,4 +1,6 @@
-﻿function squareDigits(num) {
+﻿// "7 kyu","Square Every Digit","546e2562b03326a88e000020"
+
+function squareDigits(num) {
 
     if (num < 0) { return -squareDigits(-num); }
 

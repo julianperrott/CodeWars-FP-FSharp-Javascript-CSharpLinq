@@ -49,11 +49,11 @@
   </Choose>
   <Import Project="$(FSharpTargetsPath)" />
   <ItemGroup>
-    <Compile Include="TenMinuteWalk.fs" />
-    <Compile Include="MultiplyBy.fs" />
-    <Compile Include="LetterChange.fs" />
-    <Compile Include="BaseConversion.fs" />
-    <Compile Include="ReverseWords.fs" />
+    <Compile Include="4 kyu\BaseConversion.fs" />
+    <Compile Include="6 kyu\ReverseWords.fs" />
+    <Compile Include="6 kyu\TenMinuteWalk.fs" />
+    <Compile Include="beta\LetterChange.fs" />
+    <Compile Include="beta\multiplyBy.fs" />
     <None Include="app.config" />
     <None Include="packages.config" />
   </ItemGroup>

@@ -11,7 +11,7 @@
         return x *= y;
     });
 
-    // recusion
+    // recursion
     if (n == 0) { return []; }
     return [x * y].concat(multiplyBy (x*y,y,n-1));
 

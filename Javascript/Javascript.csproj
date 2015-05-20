@@ -41,6 +41,7 @@
     <Content Include="4 kyu\baseConversion.js" />
     <Content Include="4 kyu\CountingChangeCombinations.js" />
     <Content Include="4 kyu\defaultArgs.js" />
+    <Content Include="5 kyu\Did_I_finish_my_sudoku.js" />
     <Content Include="5 kyu\HaskellListDotNotation.js" />
     <Content Include="6 kyu\Ipv4ToInt32.js" />
     <Content Include="4 kyu\Justify.js" />

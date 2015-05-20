@@ -56,6 +56,8 @@
     <Compile Include="beta\multiplyBy.fs" />
     <None Include="app.config" />
     <None Include="packages.config" />
+    <Compile Include="5 kyu\Did I finish my sudoku.fs" />
+    <None Include="5 kyu\364px-Sudoku-by-L2G-20050714_solution.svg.png" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FsUnit.CustomMatchers">

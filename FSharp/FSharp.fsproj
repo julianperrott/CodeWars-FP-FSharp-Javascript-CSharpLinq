@@ -52,12 +52,15 @@
     <Compile Include="4 kyu\BaseConversion.fs" />
     <Compile Include="6 kyu\ReverseWords.fs" />
     <Compile Include="6 kyu\TenMinuteWalk.fs" />
+    <Compile Include="6 kyu\Feynman%27s square question.fs" />
+    <None Include="6 kyu\disatoba-feynman.gif" />
     <Compile Include="beta\LetterChange.fs" />
     <Compile Include="beta\multiplyBy.fs" />
     <None Include="app.config" />
     <None Include="packages.config" />
     <Compile Include="5 kyu\Did I finish my sudoku.fs" />
     <None Include="5 kyu\364px-Sudoku-by-L2G-20050714_solution.svg.png" />
+    <Compile Include="2 kyu\EscapeTheMines.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="FsUnit.CustomMatchers">

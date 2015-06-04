@@ -49,6 +49,8 @@
     <Content Include="beta\letterChange.js" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="codeeval\distinctSequences.js" />
+    <Content Include="codeeval\fizzbuzz.js" />
     <Content Include="lib\console\console.js" />
     <Content Include="lib\jasmine-core.js" />
     <Content Include="lib\jasmine-core\boot.js" />

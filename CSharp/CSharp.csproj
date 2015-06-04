@@ -47,8 +47,11 @@
     <Compile Include="4 kyu\BaseConversion.cs" />
     <Compile Include="beta\LetterChange.cs" />
     <Compile Include="beta\MultiplyBy.cs" />
+    <Compile Include="CodeEval\DnaGeneticAlgorithm.cs" />
+    <Compile Include="CodeEval\LessMoneyMoreProblems.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="6 kyu\TenMinuteWalk.cs" />
+    <Compile Include="Roulette.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="6 kyu\ReverseWords.cs" />

@@ -8,3 +8,4 @@ Tests/bin/
 Tests/obj/
 Tests/TestResults/
 Javascript/obj/Debug/Javascript.csproj.FileListAbsolute.txt
+*.suo

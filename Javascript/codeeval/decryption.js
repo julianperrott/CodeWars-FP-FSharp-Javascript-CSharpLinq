@@ -38,6 +38,4 @@ describe("decryption", function () {
     });
 });
 
-"BHISOECRTMGWYVALUZDNFJKPQX"
- 123456789012345678901234567890
                      

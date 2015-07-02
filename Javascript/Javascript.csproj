@@ -51,6 +51,7 @@
   <ItemGroup>
     <Content Include="codeeval\AsciiDecryption.js" />
     <Content Include="codeeval\CodeEvalStub.js" />
+    <Content Include="codeeval\crackingEggs.js" />
     <Content Include="codeeval\crimeTime.js" />
     <Content Include="codeeval\decryption.js" />
     <Content Include="codeeval\distinctSequences.js" />
@@ -59,8 +60,10 @@
     <Content Include="codeeval\PalindromeRange.js" />
     <Content Include="codeeval\playwithdna.js" />
     <Content Include="codeeval\prefixExpressions.js" />
+    <Content Include="codeeval\spiralPrint.js" />
     <Content Include="codeeval\StringSubstitution.js" />
     <Content Include="codeeval\tableMin.js" />
+    <Content Include="codeeval\telephonewords.js" />
     <Content Include="codeeval\UglyNumbers.js" />
     <Content Include="codeeval\WordsToNumbers.js" />
     <Content Include="lib\console\console.js" />

@@ -19,6 +19,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -55,18 +56,23 @@
     <Content Include="codeeval\CodeEvalStub.js" />
     <Content Include="codeeval\crackingEggs.js" />
     <Content Include="codeeval\crimeTime.js" />
+    <Content Include="codeeval\DaVyncy.js" />
     <Content Include="codeeval\decryption.js" />
     <Content Include="codeeval\digitStatistics.js" />
     <Content Include="codeeval\discountOffers.js" />
     <Content Include="codeeval\distinctSequences.js" />
     <Content Include="codeeval\fizzbuzz.js" />
+    <Content Include="codeeval\FollowingInteger.js" />
     <Content Include="codeeval\glueShreddedPieces.js" />
+    <Content Include="codeeval\ip4.png" />
+    <Content Include="codeeval\IPPackage.js" />
     <Content Include="codeeval\MineSweeper.js" />
     <Content Include="codeeval\PalindromeRange.js" />
     <Content Include="codeeval\playwithdna.js" />
     <Content Include="codeeval\prefixExpressions.js" />
     <Content Include="codeeval\skyscraper.js" />
     <Content Include="codeeval\spiralPrint.js" />
+    <Content Include="codeeval\stringSearching.js" />
     <Content Include="codeeval\StringSubstitution.js" />
     <Content Include="codeeval\tableMin.js" />
     <Content Include="codeeval\telephonewords.js" />

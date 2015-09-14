@@ -46,18 +46,46 @@ Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, ad
 
 function solve(line) {
     var fragments = line.split(";");
+    var matches = findMatches(fragments);
 
-    while (fragments.length > 1) {
-        var result = findLongestMatch(fragments);
-        if (result == undefined) {
-            //assu
+    while (matches.length > 0) {
+
+        // sort to use longest first
+        matches.sort(function (a, b) { return b.len - a.len });
+
+        if (matches[0].len == 0)
+        {
             fragments.sort(function (a, b) { return b.length - a.length });
             return fragments[0];
         }
 
-        joinFragments(fragments, result.index, result.targetIndex, result.length);
+        // join best
+        joinFragments(fragments, matches[0].index, matches[0].targetIndex, matches[0].len);
+
+        var index = matches[0].index;
+
+        // remove used index and targer
+        matches = matches.filter(function (item) {
+            return item.index != matches[0].index &&
+                item.index != matches[0].targetIndex &&
+                item.targetIndex != matches[0].index &&
+                item.targetIndex != matches[0].targetIndex
+        });
+
+        // look for more matches for index
+        for (var i = 0; i < fragments.length; i++) {
+            if (i != index) {
+                if (fragments[i] != "") {
+                    var overlap = findLongestOverlap(fragments[index], fragments[i]);
+                    if (overlap > 0) {
+                        matches.push({ len: overlap, targetIndex: i, index: index });
+                    }
+                }
+            }
+        }
     }
 
+    fragments.sort(function (a, b) { return b.length - a.length });
     return fragments[0];
 }
 
@@ -68,109 +96,41 @@ function joinFragments(fragments, ixTo, ixFrom, length) {
     else {
         fragments[ixTo] = fragments[ixTo] + fragments[ixFrom].substr(length);
     }
-    fragments.splice(ixFrom, 1);
+    fragments[ixFrom] = "";
 }
 
-function findLongestMatch(fragments) {
-    var longestMatch = { length: 0, targetIndex:-1 };
-
+function findMatches(fragments) {
+    var matches = [];
     for (var fragmentIndex = 0; fragmentIndex < fragments.length - 1; fragmentIndex++) {
-
-        var result = findLongestMatchForIndex(fragments, fragmentIndex, longestMatch.length + 1);
-
-        if (result != undefined) {
-            longestMatch = result;
+        for (var index = fragmentIndex + 1; index < fragments.length; index++) {
+            var overlap = findLongestOverlap(fragments[fragmentIndex], fragments[index]);
+            if (overlap > 0) {
+                matches.push({ len: overlap, targetIndex: index, index: fragmentIndex });
+            }
         }
     }
-
-    if (longestMatch.targetIndex==-1) { return undefined;}
-
-    return longestMatch;
+    return matches;
 }
 
-function findLongestMatchForIndex(fragments, startIndex, minLength) {
-    var longestOverlap = minLength;
-    var targetIndex =-1;
+function findLongestOverlap(item1, item2) {
+    var shortest = item1.length < item2.length ? item1 : item2;
 
-    for (var index = startIndex + 1; index < fragments.length; index++) {
-        var overlap = findLongestOverlap(fragments[startIndex], fragments[index], longestOverlap);
-        if (overlap >= longestOverlap) {
-            longestOverlap = overlap;
-            targetIndex =index;
-        }
-    }
-
-    if (targetIndex == -1) { return undefined; }
-    return { length: longestOverlap, targetIndex: targetIndex, index: startIndex };
-}
-
-function findLongestOverlap(item1, item2, minLength) {
-    var shortest = item1.length<item2.length ? item1:item2;
-    var longestOverlap = -1;
-
-    for (var length = minLength; length <= shortest.length; length++) {
+    for (var length = shortest.length; length > 0; length--) {
         if (overlaps(item1, item2, length) || overlaps(item2, item1, length)) {
-            longestOverlap = length;
+            return length;
         }
     }
-    return longestOverlap;
+    return -1;
 }
 
 function overlaps(item1, item2, length) {
     return item1.substr(0, length) == item2.substr(item2.length - length)
 }
 
-describe("joinFragments", function () {
-    it("join at start", function ()
-    {
-        var frag = ["a", "abcdefghi", "b", "xsafabcd", "ghidsded"];
-        joinFragments(frag, 1, 3, 4);
-        expect(frag.length).toEqual(4);
-        expect(frag[1]).toEqual("xsafabcdefghi");
-    });
-    
-    it("join at end", function ()
-    {
-        var frag = ["a", "abcdefghi", "b", "xsafabcd", "ghidsded"];
-        joinFragments(frag, 1, 4, 3);
-        expect(frag.length).toEqual(4);
-        expect(frag[1]).toEqual("abcdefghidsded");
-    });
-});
-
-describe("findLongestMatch", function () {
-    var ar = ["abcdefghi", "xxxabc", "ghixdsd", "eoipoiabcd", "fgheoipo"];
-
-    it("length", function () { expect(findLongestMatch(ar).length).toEqual(5); });
-    it("Index", function () { expect(findLongestMatch(ar).index).toEqual(3); });
-    it("targetIndex", function () { expect(findLongestMatch(ar).targetIndex).toEqual(4); });
-    
-});
-
-describe("findLongestMatchForIndex", function () {
-    var ar = ["abcdefghi", "xxxabc", "ghixdsd", "eoipoiabcd", "fghisdsd"];
-
-    it("longer length found", function () { expect(findLongestMatchForIndex(ar, 0, 1).length).toEqual(4); });
-    it("new targetIndex found", function () { expect(findLongestMatchForIndex(ar, 0, 1).targetIndex).toEqual(4); });
-
-    it("longer length not found", function () { expect(findLongestMatchForIndex(ar, 0, 5)).toEqual(undefined); });
-
-
-});
-
-describe("findLongestOverlap", function () {
-    it("overlap found bigger than min", function () { expect(findLongestOverlap("abcdef", "xdsabc", 0)).toEqual(3); });
-    it("overlap not found bigger than min", function () { expect(findLongestOverlap("abcdef", "xdsabc", 4)).toEqual(-1); });
-});
-
-describe("overlaps", function () {
-    it("overlaps true", function () { expect(overlaps("abcdef", "xdsabc", 3)).toEqual(true); });
-    it("overlaps false", function () { expect(overlaps("abcdef", "xdsabc", 4)).toEqual(false); });
-});
-
 describe("solve", function () {
-    var simpleSample= "O draconia;conian devil! Oh la;h lame sa;saint!"
+    var simpleSample = "O draconia;conian devil! Oh la;h lame sa;saint!"
     var longSample = "m quaerat voluptatem.;pora incidunt ut labore et d;, consectetur, adipisci velit;olore magnam aliqua;idunt ut labore et dolore magn;uptatem.;i dolorem ipsum qu;iquam quaerat vol;psum quia dolor sit amet, consectetur, a;ia dolor sit amet, conse;squam est, qui do;Neque porro quisquam est, qu;aerat voluptatem.;m eius modi tem;Neque porro qui;, sed quia non numquam ei;lorem ipsum quia dolor sit amet;ctetur, adipisci velit, sed quia non numq;unt ut labore et dolore magnam aliquam qu;dipisci velit, sed quia non numqua;us modi tempora incid;Neque porro quisquam est, qui dolorem i;uam eius modi tem;pora inc;am al";
+
     it("simpleSample", function () {
         expect(solve(simpleSample)).toEqual("O draconian devil! Oh lame saint!");
     });
@@ -178,4 +138,35 @@ describe("solve", function () {
         expect(solve(longSample)).toEqual("Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.");
     });
 });
+
+
+
+
+
+
+describe("joinFragments", function () {
+    it("join at start", function ()
+    {
+        var frag = ["a", "abcdefghi", "b", "xsafabcd", "ghidsded"];
+        joinFragments(frag, 1, 3, 4);
+        expect(frag.length).toEqual(5);
+        expect(frag[1]).toEqual("xsafabcdefghi");
+    });
+    
+    it("join at end", function ()
+    {
+        var frag = ["a", "abcdefghi", "b", "xsafabcd", "ghidsded"];
+        joinFragments(frag, 1, 4, 3);
+        expect(frag.length).toEqual(5);
+        expect(frag[1]).toEqual("abcdefghidsded");
+    });
+});
+
+
+describe("overlaps", function () {
+    it("overlaps true", function () { expect(overlaps("abcdef", "xdsabc", 3)).toEqual(true); });
+    it("overlaps false", function () { expect(overlaps("abcdef", "xdsabc", 4)).toEqual(false); });
+});
+
+
 

@@ -54,6 +54,7 @@
     <Content Include="codeeval\AsciiDecryption.js" />
     <Content Include="codeeval\climbingStairs.js" />
     <Content Include="codeeval\CodeEvalStub.js" />
+    <Content Include="codeeval\computerTerminal.js" />
     <Content Include="codeeval\crackingEggs.js" />
     <Content Include="codeeval\crimeTime.js" />
     <Content Include="codeeval\DaVyncy.js" />

@@ -62,6 +62,7 @@
     <Content Include="codeeval\digitStatistics.js" />
     <Content Include="codeeval\discountOffers.js" />
     <Content Include="codeeval\distinctSequences.js" />
+    <Content Include="codeeval\EverythingOrNothing.js" />
     <Content Include="codeeval\fizzbuzz.js" />
     <Content Include="codeeval\FollowingInteger.js" />
     <Content Include="codeeval\glueShreddedPieces.js" />

@@ -70,6 +70,7 @@
     <Content Include="codeeval\IPPackage.js" />
     <Content Include="codeeval\Lakes not cakes.js" />
     <Content Include="codeeval\MineSweeper.js" />
+    <Content Include="codeeval\minPathSum.js" />
     <Content Include="codeeval\PalindromeRange.js" />
     <Content Include="codeeval\playwithdna.js" />
     <Content Include="codeeval\prefixExpressions.js" />
@@ -79,6 +80,7 @@
     <Content Include="codeeval\StringSubstitution.js" />
     <Content Include="codeeval\tableMin.js" />
     <Content Include="codeeval\telephonewords.js" />
+    <Content Include="codeeval\TooUnique.js" />
     <Content Include="codeeval\UglyNumbers.js" />
     <Content Include="codeeval\WordsToNumbers.js" />
     <Content Include="lib\console\console.js" />

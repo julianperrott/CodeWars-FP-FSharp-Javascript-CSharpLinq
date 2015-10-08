@@ -84,8 +84,8 @@ function score(grid, x, y, size, maxWidth, maxDepth, xyScores) {
         return xyScores; // can't make this sub grid any bigger
     }
 
-    var newMaxWidth = scoreHorizontally(grid, x, y, size, maxWidth, xyScores);
-    var newMaxDepth = scoreVertically(grid, x, y, size, maxDepth, xyScores);
+    var newMaxWidth = scoreHorizontally(grid, x, y, size, maxWidth);
+    var newMaxDepth = scoreVertically(grid, x, y, size, maxDepth);
 
     submitScore(size, size);
     submitScore(newMaxWidth, size);
@@ -94,7 +94,7 @@ function score(grid, x, y, size, maxWidth, maxDepth, xyScores) {
     return score(grid, x, y, size, newMaxWidth, newMaxDepth, xyScores);
 }
 
-function scoreHorizontally(grid, x, y, size, maxWidth, scores) {
+function scoreHorizontally(grid, x, y, size, maxWidth) {
     var newMaxWidth = size;
     for (var width = size + 1; width <= maxWidth; width++) {
         if (!isUnique(grid, x, y, width, size)) { return newMaxWidth; }
@@ -103,7 +103,7 @@ function scoreHorizontally(grid, x, y, size, maxWidth, scores) {
     return newMaxWidth;
 }
 
-function scoreVertically(grid, x, y, size, maxDepth, scores) {
+function scoreVertically(grid, x, y, size, maxDepth) {
     var newMaxDepth = size;
     for (var depth = size + 1; depth <= maxDepth; depth++) {
         if (!isUnique(grid, x, y, size, depth)) { return newMaxDepth; }
@@ -162,4 +162,17 @@ describe("tooUnique - ", function () {
     it("line 3", function () { expect(result[3]).toEqual("oqik****zp**"); });
     it("line 4", function () { expect(result[4]).toEqual("vbla****bd**"); });
     it("line 5", function () { expect(result[5]).toEqual("ahje****cl**"); });
+});
+
+describe("score - ", function () {
+    var grid = [
+        "rzqicaiiaege",
+        "ccwnulljybtu",
+        "jxtxupauwuah",
+        "oqikzgqrzpdq",
+        "vblalwdjbdwn",
+        "ahjeencuclbo"];
+
+    it("score", function () { expect(score(grid, 4, 3, 0, 6, 3, [])).toEqual([]); });
+    it("search", function () { expect(search(grid)).toEqual([]); });
 });

@@ -75,6 +75,7 @@
     <Content Include="codeeval\PalindromeRange.js" />
     <Content Include="codeeval\playwithdna.js" />
     <Content Include="codeeval\prefixExpressions.js" />
+    <Content Include="codeeval\SeatYourTeamMembers.js" />
     <Content Include="codeeval\skyscraper.js" />
     <Content Include="codeeval\spiralPrint.js" />
     <Content Include="codeeval\stringSearching.js" />

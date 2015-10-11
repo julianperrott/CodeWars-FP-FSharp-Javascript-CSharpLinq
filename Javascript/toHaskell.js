@@ -9,6 +9,8 @@
     data = replaceAll(data, "false", "False");
     data = replaceAll(data, "});", "");
     data = replaceAll(data, "(", " ");
+    data = replaceAll(data, ";", " ");
+    data = replaceAll(data, "var ", " ");
     return data;
 }
 

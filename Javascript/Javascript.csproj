@@ -63,6 +63,7 @@
     <Content Include="codeeval\discountOffers.js" />
     <Content Include="codeeval\distinctSequences.js" />
     <Content Include="codeeval\DistinctTriangles.js" />
+    <Content Include="codeeval\EfficientDelivery.js" />
     <Content Include="codeeval\EverythingOrNothing.js" />
     <Content Include="codeeval\fizzbuzz.js" />
     <Content Include="codeeval\FollowingInteger.js" />

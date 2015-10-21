@@ -1,4 +1,33 @@
-﻿function seatYourTeamMembers(line) {
+﻿/* https://www.codeeval.com/open_challenge_scores/?pkbid=118
+
+Seat your team members
+
+Challenge Description:
+
+Your team is moving to a new office. In order to make it feel comfortable on a new place you decided to give the possibility to pick the places where they want to sit. After the team visited the new office, each team member gave you a list of working places that he/she would like to occupy. Your goal is to determine a possibility of making all of your team members feel comfortable according to those lists. 
+
+ All working places in the new office are numbered from 1 to N. And each team member gave you the list which contained the places in unsorted order. 
+
+Input sample:
+
+Your program should accept as its first argument a path to a filename. Each line of the file contains an integer N of available places in the office as the first digit and the lists of places that have been chosen by each team member. These lists are enclosed by square brackets. E.g. 
+4; 1:[1, 3, 2], 2:[1], 3:[4, 3], 4:[4, 3]
+3; 1:[1, 3, 2], 2:[1], 3:[1]
+
+Output sample:
+
+For each line of input print out the simple "Yes" or "No" answer for the following question: "Is there a possibility to make all of your team members feel comfortable at the new office?". E.g. 
+Yes
+No
+
+Constraints: 
+ N is an integer in range [1, 50]. 
+ The number of team members is <= N. 
+ Each team member can pick 1 to N numbers of working places. 
+
+*/
+
+function seatYourTeamMembers(line) {
     return canSeat(toSeats(line), toPrefs(line)) ?"Yes":"No";
 }
 

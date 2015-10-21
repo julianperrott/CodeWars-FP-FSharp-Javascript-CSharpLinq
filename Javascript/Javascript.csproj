@@ -74,6 +74,7 @@
     <Content Include="codeeval\MineSweeper.js" />
     <Content Include="codeeval\minPathSum.js" />
     <Content Include="codeeval\PalindromeRange.js" />
+    <Content Include="codeeval\PeakTraffic.js" />
     <Content Include="codeeval\playwithdna.js" />
     <Content Include="codeeval\prefixExpressions.js" />
     <Content Include="codeeval\SeatYourTeamMembers.js" />

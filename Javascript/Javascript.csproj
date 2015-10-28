@@ -71,6 +71,7 @@
     <Content Include="codeeval\ip4.png" />
     <Content Include="codeeval\IPPackage.js" />
     <Content Include="codeeval\Lakes not cakes.js" />
+    <Content Include="codeeval\longestCommonSubsequence.js" />
     <Content Include="codeeval\MineSweeper.js" />
     <Content Include="codeeval\minPathSum.js" />
     <Content Include="codeeval\PalindromeRange.js" />

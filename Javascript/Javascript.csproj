@@ -53,6 +53,7 @@
     <Content Include="codeeval\alphaBlocks.js" />
     <Content Include="codeeval\AsciiDecryption.js" />
     <Content Include="codeeval\climbingStairs.js" />
+    <Content Include="codeeval\closestPair.js" />
     <Content Include="codeeval\CodeEvalStub.js" />
     <Content Include="codeeval\computerTerminal.js" />
     <Content Include="codeeval\crackingEggs.js" />
@@ -68,6 +69,7 @@
     <Content Include="codeeval\fizzbuzz.js" />
     <Content Include="codeeval\FollowingInteger.js" />
     <Content Include="codeeval\glueShreddedPieces.js" />
+    <Content Include="codeeval\gridWalk.js" />
     <Content Include="codeeval\ip4.png" />
     <Content Include="codeeval\IPPackage.js" />
     <Content Include="codeeval\Lakes not cakes.js" />
@@ -87,6 +89,7 @@
     <Content Include="codeeval\StringSubstitution.js" />
     <Content Include="codeeval\tableMin.js" />
     <Content Include="codeeval\telephonewords.js" />
+    <Content Include="codeeval\packageProblem.js" />
     <Content Include="codeeval\TooUnique.js" />
     <Content Include="codeeval\UglyNumbers.js" />
     <Content Include="codeeval\WordsToNumbers.js" />

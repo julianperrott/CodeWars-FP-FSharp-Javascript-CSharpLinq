@@ -52,6 +52,7 @@
   <ItemGroup>
     <Content Include="codeeval\alphaBlocks.js" />
     <Content Include="codeeval\AsciiDecryption.js" />
+    <Content Include="codeeval\bayBridges.js" />
     <Content Include="codeeval\climbingStairs.js" />
     <Content Include="codeeval\closestPair.js" />
     <Content Include="codeeval\CodeEvalStub.js" />

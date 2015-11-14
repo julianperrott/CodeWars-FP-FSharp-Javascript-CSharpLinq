@@ -102,7 +102,7 @@ function fitBlocksToLetters(blocksForEachLetter) {
         if (acc == 1) { return acc; }
         var newblocksForEachLetter = removeBlock(firstBlock, blocksForEachLetter.filter(function (b, bi) { return i != bi; }));
         return fitBlocksToLetters(newblocksForEachLetter);
-    },0);
+    }, 0);
 }
 
 // count how often each block appears

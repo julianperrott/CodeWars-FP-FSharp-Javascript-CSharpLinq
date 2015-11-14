@@ -50,9 +50,11 @@
     <Content Include="beta\letterChange.js" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="codeeval\aBusNetwork.js" />
     <Content Include="codeeval\alphaBlocks.js" />
     <Content Include="codeeval\AsciiDecryption.js" />
     <Content Include="codeeval\bayBridges.js" />
+    <Content Include="codeeval\brainfck.js" />
     <Content Include="codeeval\climbingStairs.js" />
     <Content Include="codeeval\closestPair.js" />
     <Content Include="codeeval\CodeEvalStub.js" />
@@ -91,7 +93,9 @@
     <Content Include="codeeval\tableMin.js" />
     <Content Include="codeeval\telephonewords.js" />
     <Content Include="codeeval\packageProblem.js" />
+    <Content Include="codeeval\theTourist.js" />
     <Content Include="codeeval\TooUnique.js" />
+    <Content Include="codeeval\typeAhead.js" />
     <Content Include="codeeval\UglyNumbers.js" />
     <Content Include="codeeval\WordsToNumbers.js" />
     <Content Include="lib\console\console.js" />

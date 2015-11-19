@@ -88,6 +88,7 @@
     <Content Include="codeeval\SeatYourTeamMembers.js" />
     <Content Include="codeeval\skyscraper.js" />
     <Content Include="codeeval\spiralPrint.js" />
+    <Content Include="codeeval\StraightLines.js" />
     <Content Include="codeeval\stringSearching.js" />
     <Content Include="codeeval\StringSubstitution.js" />
     <Content Include="codeeval\tableMin.js" />

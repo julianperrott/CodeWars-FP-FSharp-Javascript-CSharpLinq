@@ -75,6 +75,7 @@
     <Content Include="codeeval\gridWalk.js" />
     <Content Include="codeeval\ip4.png" />
     <Content Include="codeeval\IPPackage.js" />
+    <Content Include="codeeval\juggleFest.js" />
     <Content Include="codeeval\Lakes not cakes.js" />
     <Content Include="codeeval\largestSubMatrix.js" />
     <Content Include="codeeval\longestCommonSubsequence.js" />

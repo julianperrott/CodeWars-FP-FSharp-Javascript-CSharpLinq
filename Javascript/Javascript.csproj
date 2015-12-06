@@ -99,6 +99,9 @@
     <Content Include="codeeval\TooUnique.js" />
     <Content Include="codeeval\typeAhead.js" />
     <Content Include="codeeval\UglyNumbers.js" />
+    <Content Include="codeeval\VisitToTheHeadQuarters\VisitToTheHeadquarters.js" />
+    <Content Include="codeeval\VisitToTheHeadQuarters\VisitToTheHeadQuarters_large.wmv" />
+    <Content Include="codeeval\VisitToTheHeadQuarters\VisitToTheHeadQuarters_small.wmv" />
     <Content Include="codeeval\WordsToNumbers.js" />
     <Content Include="lib\console\console.js" />
     <Content Include="lib\jasmine-core.js" />
@@ -139,6 +142,9 @@
   <ItemGroup>
     <Content Include="toHaskell.js" />
     <Content Include="toHaskellTest.html" />
+    <Content Include="codeeval\VisitToTheHeadQuarters\angular.js" />
+    <Content Include="codeeval\VisitToTheHeadQuarters\simulation.html" />
+    <Content Include="codeeval\VisitToTheHeadQuarters\visitController.js" />
     <Content Include="web.config" />
     <Content Include="lib\jasmine-core.rb" />
     <Content Include="lib\jasmine-core\core.py" />
